@@ -9,7 +9,7 @@
 <hr>
 
 ### Step-01 첫번째 리눅스의 슈퍼권환을 가집니다.
-root@chainflix:/home# sudo su -
+root@chainflix:/home# <font color='dodgerblue' size=4> sudo su -</font>
 ```
 비밀번호 입력
 ```
@@ -19,7 +19,7 @@ root@chainflix:/home# sudo su -
 <hr>
 
 ### Step-02 필수 프로그램 설치 - 필요한 프로그램을 설치합니다.
-root@chainflix:/home# sudo apt-get install vim
+root@chainflix:/home# <font color='dodgerblue' size=4> sudo apt-get install vim</font>
 ```
 설치되는 과정이 보여집니다.
 ```
@@ -27,7 +27,7 @@ root@chainflix:/home# sudo apt-get install vim
 <hr>
 
 ### Step-03 폴더생성 - 체인 플릭스 설치할 폴더를 만듭니다.
-root@chainflix:/home# mkdir /home/chainflix
+root@chainflix:/home# <font color='dodgerblue' size=4> mkdir /home/chainflix</font>
 ```
 화면에 아무런 표시가 되지 않습니다.
 ```
@@ -35,7 +35,7 @@ root@chainflix:/home# mkdir /home/chainflix
 <hr>
 
 ### Step-04 설치할 폴더에 들어가기를 진행합니다.
-root@chainflix:/home# cd /home/chainflix
+root@chainflix:/home# <font color='dodgerblue' size=4> cd /home/chainflix</font>
 ```
 화면에 아무런 표시가 되지 않습니다.
 ```
@@ -43,7 +43,7 @@ root@chainflix:/home# cd /home/chainflix
 <hr>
 
 ### Step-05 체인플릭스 프로그램 다운받기를 진행합니다.
-root@chainflix:/home# sudo wget https://github.com/jampick-kr/chainflix-storage-update/releases/latest/download/chainflix.linux.tar.gz
+root@chainflix:/home# <font color='dodgerblue' size=4> sudo wget https://github.com/jampick-kr/chainflix-storage-update/releases/latest/download/chainflix.linux.tar.gz </font>
 ```
 Resolving github.com (github.com)... 15.164.81.167
 HTTP request sent, awaiting response... 200 OK
@@ -56,7 +56,7 @@ chainflix.linux.tar.gz  100%[==========================================>]  19.56
 <hr>
 
 ### Step-06 다운받은 체인플릭스 압축 풀기를 진행합니다.
-root@chainflix:/home/chainflix# tar xvfzp chainflix.linux.tar.gz
+root@chainflix:/home/chainflix# <font color='dodgerblue' size=4> tar xvfzp chainflix.linux.tar.gz</font>
 ```
 chainflix
 lib/
@@ -66,14 +66,14 @@ lib/core.bin
 <hr>
 
 ### Step-07 압축을 풀었기때문에 다운받은 파일 삭제하기 - 필수아님
-root@chainflix:/home/chainflix# rm -rf chainflix.linux.tar.gz
+root@chainflix:/home/chainflix# <font color='dodgerblue' size=4> rm -rf chainflix.linux.tar.gz</font>
 ```
 화면에 아무런 표시가 되지 않습니다.
 ```
 <hr>
 
 ### Step-08 체인플릭스 프로그램 실행하기
-root@chainflix:/home/chainflix# ./chainflix start
+root@chainflix:/home/chainflix# <font color='dodgerblue' size=4> ./chainflix start</font>
 ```
 [LAUNCHER] task run
 [LAUNCHER] [APP] CHAINFLIX STORAGE START v1.1.8
@@ -97,13 +97,13 @@ root@chainflix:/home/chainflix# ./chainflix start
 [LAUNCHER] [SOCKET] Storage Disconnect undefined
 .
 ```
-##### 알림1 : 컨트롤-x 또는 컨트롤-c 눌러 빠져나옵니다..
+##### 알림1 : 컨트롤-x 또는 컨트롤-c 등을  눌러 빠져나옵니다..
 ##### 알림2 : 설치 폴더아래 conf 폴더 생성, config.json 파일이 생성되어 있어야 합니다.
 
 <hr>
 
 ### Step-09 체인플릭스 환경 설정하기
-root@chainflix:/home/chainflix# vi ./conf/config.json
+root@chainflix:/home/chainflix#  <font color='dodgerblue' size=4> vi ./conf/config.json</font>
 ```
 {
   "stream": {
@@ -122,16 +122,18 @@ root@chainflix:/home/chainflix# vi ./conf/config.json
   }
 }
 ```
-##### 알림1 : 간혹 vi 입력시에 모드(읽기모드, 수정모드등등)을 요청하는 화면이 보이시면 수정모드(E)를 눌러 진입해주세요.
-##### 알림2 : vi로 진입하셨으면 i = 쓰기모드(설정값을 넣을수 있는 상태) / :wq = 저장후 종료하기 입니다.
-##### 알림3 : i를 눌러 설정값을 수정할수 있는 상태이면 storage_id와 api_key는 chainflix.net 홈페이지에서 확인후 입력해주세요.
-##### 알림4 : Size_max : 100이면 100G / 3000G = 3테라 입니다.
-##### 알림5 : 하드디스크 2개로 서비스하실때 체인플릭스 저장위치를 다르게 하실경우 rootFolder / uploadPath 경로를 절대 경로로 잡아주세요.
+
+
+- 알림1 : 간혹 vi 입력시에 모드(읽기모드, 수정모드등등)을 요청하는 화면이 보이시면 수정모드(E)를 눌러 진입해주세요.
+- 알림2 : vi로 진입하셨으면 i = 쓰기모드(설정값을 넣을수 있는 상태) / <font color='dodgerblue' size=4> :wq </font> 치신 후 엔터를 눌러주세요. 설정파일이 저장 후 종료하기 입니다.
+- 알림3 : i를 눌러 설정값을 수정할수 있는 상태이면 storage_id와 api_key는 chainflix.net 홈페이지에서 확인후 입력해주세요.
+- 알림4 : Size_max : 100이면 100G / 3000G = 3테라 입니다.
+- 알림5 : 하드디스크 2개로 서비스하실때 체인플릭스 저장위치를 다르게 하실경우 rootFolder / uploadPath 경로를 절대 경로로 잡아주세요.
 
 <hr>
 
 ### Step-10 마지막단계 - 체인플릭스 실행하기
-root@chainflix:/home/chainflix# sudo ./chainflix start
+root@chainflix:/home/chainflix# <font color='dodgerblue' size=4>sudo ./chainflix start</font>
 ```
 2020-06-09 14:46:58 info: Daemon Starts ..................
 2020-06-09 14:46:58 info: Content Count: 0
@@ -147,7 +149,7 @@ root@chainflix:/home/chainflix# sudo ./chainflix start
 
 # 정상 작동 여부 확인
 ### 체크포인트 #1 sudo ./chainflix start 한 후 프로그램이 정상적으로 작동중인가?
-인터넷 브라우저를 열어서 http://localhost:3001 또는 컴퓨터 private ip http://192.168.*.*:3001 를 접속해세요. 
+인터넷 브라우저를 열어서 http://localhost:3001 또는 컴퓨터 private ip http://192.168.*.*:3001 를 접속해세요.
 ```
 [정상적이지 안을때 아래 상황을 체크해주세요.]
 config.json에 설정디 파일을 다시한번 확인해보세요.
