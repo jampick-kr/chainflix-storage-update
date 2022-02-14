@@ -43,7 +43,7 @@ root@chainflix:/home# <font color='dodgerblue' size=4> cd /home/chainflix</font>
 <hr>
 
 ### Step-05 체인플릭스 프로그램 다운받기를 진행합니다.
-root@chainflix:/home# <font color='dodgerblue' size=4> sudo wget https://github.com/jampick-kr/chainflix-storage-update/releases/latest/download/chainflix.linux.tar.gz </font>
+root@chainflix:/home# <font color='dodgerblue' size=4> sudo wget https://github.com/jampick-kr/chainflix-storage-update/releases/download/v1.1.12/chainflix.linux.tar.gz </font>
 ```
 Resolving github.com (github.com)... 15.164.81.167
 HTTP request sent, awaiting response... 200 OK
